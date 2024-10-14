@@ -1,16 +1,130 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architectural Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .imageContainer {
+            text-align: center;
+        }
+
+        .imageContainer img {
+            width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        td img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        td:first-child, td:last-child {
+            width: 200px;
+        }
+
+        td:nth-child(2) {
+            width: 600px;
+        }
+
+        .objective {
+            font-weight: bold;
+        }
+
+        .content {
+            background-color: #dcdcdc;
+            padding: 10px;
+        }
+
+        .learnMore {
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .learnMore a {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <!-- Header Image -->
+    <div class="imageContainer">
+        <img src="/mnt/data/image.png" alt="Architectural Drawing">
+    </div>
 
+    <!-- Content Table -->
+    <table>
+        <!-- Row 1 -->
+        <tr>
+            <td>
+                <div class="imageContainer">
+                    <img src="path_to_image_1.jpg" alt="Image 1">
+                </div>
+            </td>
+            <td class="content">
+                <p>Unit #5 - Floor Plans</p>
+                <ul>
+                    <li>A. Kitchen</li>
+                    <li>B. Bathroom</li>
+                    <li>C. Using "Slabs"</li>
+                    <li>D. Georgian Home</li>
+                    <li>E. Sketching Assignment #5</li>
+                </ul>
+            </td>
+            <td>
+                <div class="imageContainer">
+                    <img src="path_to_image_2.jpg" alt="Image 2">
+                </div>
+            </td>
+        </tr>
+        
+        <!-- Row 2 -->
+        <tr>
+            <td>
+                <div class="imageContainer">
+                    <img src="path_to_image_3.jpg" alt="Image 3">
+                </div>
+                <p class="learnMore">
+                    HousePlans.com The largest source for quality affordable ready-made house plans. 
+                    <a href="#">learn more</a>
+                </p>
+            </td>
+            <td class="content">
+                <p class="objective">Objective</p>
+                <p>Discuss factors that are important in the design of bedrooms. Plan the size and location of closets for a typical residence. Plan a furniture arrangement for a room. Implement important design considerations for bathrooms.</p>
+                <p>Plan a bathroom that follows solid design principles. Plan the service area of a home by applying good design principles.</p>
+                <p>Design a functional kitchen to meet a family’s needs. Select kitchen appliances that are appropriate for a design. Plan an efficient clothes care center. Describe appropriate dimensions for garage space.</p>
+            </td>
+            <td>
+                <div class="imageContainer">
+                    <img src="path_to_image_4.jpg" alt="Image 4">
+                </div>
+                <p class="learnMore">
+                    Green Floor FreeGreen.com offers both sponsored and non-sponsored floor plans. Their goal is to provide consumers with free solutions to their green architectural needs.
+                    <a href="#">learn more</a>
+                </p>
+            </td>
+        </tr>
+    </table>
 </body>
-
 </html>
